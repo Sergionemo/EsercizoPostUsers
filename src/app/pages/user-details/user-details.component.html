@@ -1,0 +1,10 @@
+<ng-container *ngIf="utente; else utenteNot">
+  <h1>{{utente.name}}</h1>
+  <p>{{utente.email}}</p>
+  <p>{{utente.type}}</p>
+</ng-container>
+
+
+<ng-template #utenteNot>
+  <p>Non ci sono informazioni</p>
+</ng-template>
